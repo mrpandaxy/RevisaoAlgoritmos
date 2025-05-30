@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class CadastroAluno {
     public static void main(String[] args) {
 
-
     /*Objetivo:
     Permitir cadastrar vários alunos
     Registrar nome e duas notas por aluno
@@ -20,7 +19,6 @@ public class CadastroAluno {
         int totalAlunos = input.nextInt();
         input.nextLine();
 
-
         double somaTurma = 0;
         int aprovados = 0;
         int reprovados = 0;
@@ -28,34 +26,33 @@ public class CadastroAluno {
         String melhorAluno = "";
 
         for (int i = 1; i <= totalAlunos; i++){
-        System.out.println("\n=== Aluno " + i + "===");
+            System.out.println("\n=== Aluno " + i + "===");
 
-        System.out.println("\ndigite o nome: ");
-        String nomeAluno = input.nextLine();
+            System.out.println("\ndigite o nome: ");
+            String nomeAluno = input.nextLine();
 
-        System.out.println("\nnota 1: " + i );
-        double notaAluno1 = input.nextDouble();
-        input.nextLine();
+            System.out.println("\nnota 1: " + i );
+            double notaAluno1 = input.nextDouble();
+            input.nextLine();
 
-        System.out.println("\nnota 2: " + i );
-        double notaAluno2 = input.nextDouble();
-        input.nextLine();
+            System.out.println("\nnota 2: " + i );
+            double notaAluno2 = input.nextDouble();
+            input.nextLine();
 
-        double mediaAluno = (notaAluno1 + notaAluno2) / 2;
-        somaTurma += mediaAluno;
+            double mediaAluno = (notaAluno1 + notaAluno2) / 2;
+            somaTurma += mediaAluno;
 
-       String status = mediaAluno >= 6 ? "aprovado" : "reprovado";
-       System.out.println("Aluno " + nomeAluno + " foi " + status);
+           String status = mediaAluno >= 6 ? "aprovado" : "reprovado";
+           System.out.println("Aluno " + nomeAluno + " foi " + status);
 
-        if(mediaAluno >= 6){
-            aprovados++;
-        }else
-            reprovados++;
-        if(mediaAluno > maiorMedia){
-            maiorMedia = mediaAluno;
-            melhorAluno = nomeAluno;
-        }
-
+            if(mediaAluno >= 6){
+                aprovados++;
+            }else
+                reprovados++;
+            if(mediaAluno > maiorMedia){
+                maiorMedia = mediaAluno;
+                melhorAluno = nomeAluno;
+            }
         }
         double mediaTurma = somaTurma / totalAlunos;
 

@@ -13,7 +13,6 @@ public class Exercicio2CadastroAtleta {
 
         Scanner input = new Scanner(System.in);
         System.out.println("=== Cadastro do atleta ===\n");
-
         System.out.println("Informe a quantidade de atletas que deseja cadastrar: ");
         int totalAtletas = input.nextInt();
         input.nextLine();
