@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CadastroAluno {
+public class Exercicio3CadastroAluno {
     public static void main(String[] args) {
 
     /*Objetivo:
