@@ -13,6 +13,7 @@ public class Exercicio4Relogio {
 
                     System.out.printf("%02d:%02d:%02d\n", hora, minuto, segundo);
 
+
                 }
             }
         }
