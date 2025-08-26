@@ -34,6 +34,8 @@ public class InicioDeEstudo {
         System.out.println("aluno aprovado? " + (alunoAprovado ? "aluno aprovado!" : "aluno reprovado!" ));
         System.out.println("=========================");
 
+
+
         input.close();
     }
 }
